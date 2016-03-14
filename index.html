@@ -11,6 +11,7 @@
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 </head>
 <body>
+<my-app>test</my-app>
 <todo-app></todo-app>
 <footer class="info">
     <p>Double-click to edit a todo</p>
@@ -26,10 +27,15 @@
             'app': {
                 format: 'cjs',
                 defaultExtension: 'js'
+            },
+            'test': {
+                format: 'cjs',
+                defaultExtension: 'js'
             }
         }
     });
     System.import('app/bootstrap');
+    System.import('test/main');
 </script>
 </body>
 </html>
